@@ -1,22 +1,10 @@
-# importing OpenCV, time and Pandas library 
 import cv2, time, pandas 
-# importing datetime class from datetime library 
 from datetime import datetime 
-  
-# Assigning our static_back to None 
-static_back = None
-  
-# List when any moving object appear 
+
+static_back = None 
 motion_list = [ None, None ] 
-  
-# Time of movement 
 time = [] 
-  
-# Initializing DataFrame, one column is start  
-# time and other column is end time 
 df = pandas.DataFrame(columns = ["Start", "End"]) 
-  
-# Capturing video 
 video = cv2.VideoCapture(0) 
   
 # Infinite while loop to treat stack of image as video 
